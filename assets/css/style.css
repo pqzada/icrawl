@@ -1,0 +1,22 @@
+
+h1 {
+    margin-top: 0px;
+    font-size: 24px;
+}
+
+article {
+    margin-bottom: 5px;
+    padding: 10px;
+}
+
+article.odd {
+    background: #EEE;
+}
+
+article img.media-object {
+    width: 150px;
+}
+
+article p {
+    margin-bottom: 0px;
+}

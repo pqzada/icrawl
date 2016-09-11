@@ -1,0 +1,19 @@
+<?php
+
+$config = array(
+
+	// Base de datos
+	'dsn' => 'mysql:dbname=instacrawl;host=localhost',
+	'user' => 'root',
+	'pass' => 'root',
+	'db' => new PDO('mysql:dbname=instacrawl;host=localhost', 'root', 'root'),
+
+	// Crawler
+	'crawler_num_pub' => 10,
+
+	// Listado publicaciones
+	'publicaciones_por_pagina' => 500
+
+);
+
+?>
