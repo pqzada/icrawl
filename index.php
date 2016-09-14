@@ -38,6 +38,7 @@ extract(get_object_vars($controller->_view));
 		<? include dirname(__FILE__) . '/views/' . $controller->_viewFile; ?>
 	</div>
 
+	<script type="text/javascript" src="/assets/js/jquery.lazyload.js"></script>
 	<script type="text/javascript" src="/assets/js/functions.js"></script>
 </body>
 </html>

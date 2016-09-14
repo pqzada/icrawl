@@ -11,7 +11,7 @@
 				<div class="media">
 					<div class="media-left">
 						<a href="<?=$p->getUrl()?>" target="_blank">
-							<img class="media-object" src="<?=$p->getImagen()?>" alt="...">
+							<img class="media-object lazy" data-original="<?=$p->getImagen()?>" alt="...">
 						</a>
 					</div>
 					<div class="media-body">
