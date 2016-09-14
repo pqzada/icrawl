@@ -27,6 +27,9 @@ foreach($users as $user) {
 		$publicacionFacade->save($publicacion);
 	}
 
+	$actualizacionFacade = new ActualizacionFacade();
+	$actualizacionFacade->update();
+
 }
 
 ?>
