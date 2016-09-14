@@ -20,5 +20,6 @@ $(document).ready(function(){
 	});
 
 	$("img.lazy").lazyload();
+	$('#table').DataTable();
 
 });

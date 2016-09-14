@@ -1,9 +1,13 @@
+body {
+	font-family: 'Lato', sans-serif;
+}
 
 h1 {
     margin-top: 0px;
     font-size: 24px;
 }
 
+/* Publicaciones */
 article {
     margin-bottom: 5px;
     padding: 10px;
@@ -19,4 +23,9 @@ article img.media-object {
 
 article p {
     margin-bottom: 0px;
+}
+
+/* Cuenta */
+div#table_wrapper {
+    margin-top: 20px;
 }

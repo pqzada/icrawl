@@ -8,7 +8,7 @@
 	</div>
 
 	<div class="col-xs-12">
-		<table class="table table-hover table-condensed table-striped">
+		<table class="table table-hover table-condensed table-striped" id="table">
 			<thead>
 				<th>ID</th>
 				<th>Nombre</th>
