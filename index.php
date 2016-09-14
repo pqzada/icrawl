@@ -8,6 +8,9 @@ require_once dirname(__FILE__) . '/router.php';
 
 extract(get_object_vars($controller->_view));
 
+$actualizacionFacade = new ActualizacionFacade();
+$actualizacion = $actualizacionFacade->get();
+
 ?>
 
 <!DOCTYPE html>

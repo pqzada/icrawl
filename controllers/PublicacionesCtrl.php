@@ -62,6 +62,9 @@ class PublicacionesCtrl extends Controller {
 
 		}
 
+		$actualizacionFacade = new ActualizacionFacade();
+		$actualizacionFacade->update();
+
 		header("Location: " . $_SERVER['HTTP_REFERER']);
 	}
 

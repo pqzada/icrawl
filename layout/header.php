@@ -21,6 +21,7 @@
       </ul>
 
       <ul class="nav navbar-nav navbar-right">
+        <li><a href="#" onclick="return false;">(Última actualización <?=$actualizacion->getFecha()?>)</a></li>
         <li><a href="/?mod=publicaciones&action=actualizar"><i class="glyphicon glyphicon-refresh"></i> Actualizar</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
