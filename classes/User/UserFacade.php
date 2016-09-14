@@ -13,6 +13,12 @@ class UserFacade {
 
 			$userMapper = new UserMapper();
 			$userMapper->save($user);
+
+			$dir = dirname(__FILE__) . '/../../upload/publicaciones/' . $user->getId();
+			if (!file_exists($dir) && !is_dir($dir)) {
+				mkdir($dir, 0777);
+			}
+
 			return true;
 		} else {
 			return $valid;
