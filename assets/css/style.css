@@ -29,7 +29,6 @@ article p {
 
 article p.info {
     position: absolute;
-    right: 10px;
     bottom: 10px;
     background: #333;
     color: #FFF;
