@@ -26,7 +26,7 @@
 							</button>
 						</h4>
 						<p><?=utf8_decode($p->getTitulo())?></p>
-						<p>Publicado por <em><?=$usuarios[$p->getIdUsuario()]['nombre']?> (<?=$usuarios[$p->getIdUsuario()]['cuenta']?>)</em> el <?=$p->getFechaPublicacion()?></p>
+						<p class="info">Publicado por <em><?=$usuarios[$p->getIdUsuario()]['nombre']?></em>&nbsp;&nbsp;<time class="timeago" datetime="<?=str_replace(" ","T",$p->getFechaPublicacion())?>"><?=$p->getFechaPublicacion()?></time></p>
 					</div>
 				</div>
 			</article>
