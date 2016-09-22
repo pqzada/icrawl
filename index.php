@@ -19,6 +19,7 @@ $actualizacion = $actualizacionFacade->get();
 
 	<title>InstaCrawl</title>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -30,6 +31,7 @@ $actualizacion = $actualizacionFacade->get();
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
 	<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/assets/css/media.css">
 
 	<script   src="https://code.jquery.com/jquery-1.9.1.min.js" integrity="sha256-wS9gmOZBqsqWxgIVgA8Y9WcQOa7PgSIX+rPA0VL2rbQ=" crossorigin="anonymous"></script>
 
@@ -48,6 +50,8 @@ $actualizacion = $actualizacionFacade->get();
 	</div>
 
 	<script type="text/javascript" src="/assets/js/jquery.lazyload.js"></script>
+	<script type="text/javascript" src="/assets/js/jquery.timeago.js"></script>
+	<script type="text/javascript" src="/assets/js/jquery.timeago.es.js"></script>
 	<script type="text/javascript" src="/assets/js/functions.js"></script>
 </body>
 </html>

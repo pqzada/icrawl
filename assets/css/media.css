@@ -1,0 +1,35 @@
+@media (max-width: 767px) {
+
+    .media-left {
+        display: block;
+        width: 100%;
+    }
+
+    .media-left img.media-object {
+        width: 100% !important;
+        margin-bottom: 10px;
+    }
+
+    article {
+        padding-top: 60px;
+        background: #EEE;
+    }
+
+    article p.info {
+        top: 10px;
+        height: 40px;
+        left: 0px;
+        width: 100%;
+        text-align: center;
+        line-height: 30px;
+    }
+
+    article p.info em {
+        font-size: 14px;
+    }
+
+    article {
+        position: relative;
+    }
+
+}

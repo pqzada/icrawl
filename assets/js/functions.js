@@ -20,6 +20,7 @@ $(document).ready(function(){
 	});
 
 	$("img.lazy").lazyload();
+	$("time.timeago").timeago();
 	$('#table').DataTable();
 
 });

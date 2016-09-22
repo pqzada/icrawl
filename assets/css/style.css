@@ -12,6 +12,7 @@ article {
     margin-bottom: 5px;
     padding: 10px;
     font-size: 18px !important;
+    position: relative;
 }
 
 article.odd {
@@ -19,11 +20,27 @@ article.odd {
 }
 
 article img.media-object {
-    width: 250px;
+    width: 150px;
 }
 
 article p {
     margin-bottom: 0px;
+}
+
+article p.info {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    background: #333;
+    color: #FFF;
+    padding: 5px;
+    font-size: 14px;
+}
+
+article p.info em {
+    font-size: 18px;
+    font-weight: bold;
+    color: #19e823;
 }
 
 /* Cuenta */
