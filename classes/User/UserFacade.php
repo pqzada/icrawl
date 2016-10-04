@@ -67,6 +67,12 @@ class UserFacade {
 		return $userMapper->findAll();
 	}
 
+	public function getUserById($userId)
+	{
+		$userMapper = new UserMapper();
+		return $userMapper->findById($userId);
+	}
+
 	public function getUserPosts($userId) 
 	{
 		$pc = new PublicacionCrawler();

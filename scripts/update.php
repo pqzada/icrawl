@@ -10,26 +10,40 @@ $publicacionFacade = new PublicacionFacade();
 
 $users = $userFacade->getUsers();
 
+$idx = 0;
 foreach($users as $user) {
 
-	$user->setPublicaciones($userFacade->getUserPosts($user->getId()));
-	$user->setMediaComentarios($publicacionFacade->getMediaComentarios($user->getId()));
-	$user->setMediaLikes($publicacionFacade->getMediaLikes($user->getId()));
-	$userFacade->update($user);
+	$script = dirname(__FILE__) . '/update_user.php ' . $user->getId();
+	$log = dirname(__FILE__) . '/update_user.log';
 
-	foreach($user->getPublicaciones() as $publicacion) {
-
-		$destacado = 0;
-		if($publicacion->getComentarios() > $user->getMediaComentarios()) $destacado++;
-		if($publicacion->getLikes() > $user->getMediaLikes()) $destacado++;
-		$publicacion->setDestacada($destacado);
-
-		$publicacionFacade->save($publicacion);
+	shell_exec("php $script >> $log &");
+	if($idx++ == 2) {
+		sleep(1);
+		$idx=0;
 	}
 
-	$actualizacionFacade = new ActualizacionFacade();
-	$actualizacionFacade->update();
-
 }
+
+// foreach($users as $user) {
+
+// 	$user->setPublicaciones($userFacade->geUserPosts($user->getId()));
+// 	$user->setMediaComentarios($publicacionFacade->getMediaComentarios($user->getId()));
+// 	$user->setMediaLikes($publicacionFacade->getMediaLikes($user->getId()));
+// 	$userFacade->update($user);
+
+// 	foreach($user->getPublicaciones() as $publicacion) {
+
+// 		$destacado = 0;
+// 		if($publicacion->getComentarios() > $user->getMediaComentarios()) $destacado++;
+// 		if($publicacion->getLikes() > $user->getMediaLikes()) $destacado++;
+// 		$publicacion->setDestacada($destacado);
+
+// 		$publicacionFacade->save($publicacion);
+// 	}
+
+// 	$actualizacionFacade = new ActualizacionFacade();
+// 	$actualizacionFacade->update();
+
+// }
 
 ?>

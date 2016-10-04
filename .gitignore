@@ -1,3 +1,4 @@
 .phpintel
 config.php
 upload/
+scripts/update_user.log
