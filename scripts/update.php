@@ -17,7 +17,7 @@ foreach($users as $user) {
 	$log = dirname(__FILE__) . '/update_user.log';
 
 	shell_exec("php $script >> $log &");
-	if($idx++ == 2) {
+	if($idx++ == 5) {
 		sleep(1);
 		$idx=0;
 	}
