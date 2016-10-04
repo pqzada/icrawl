@@ -25,7 +25,7 @@
 								<i class="glyphicon glyphicon-trash"></i>
 							</button>
 						</h4>
-						<p><?=utf8_decode($p->getTitulo())?></p>
+						<p><?=($p->getTitulo())?></p>
 						<p class="info">Publicado por <em><?=$usuarios[$p->getIdUsuario()]['nombre']?></em>&nbsp;&nbsp;<time class="timeago" datetime="<?=str_replace(" ","T",$p->getFechaPublicacion())?>"><?=$p->getFechaPublicacion()?></time></p>
 					</div>
 				</div>
